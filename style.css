@@ -1,0 +1,196 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+:root {
+  --bg-color: #202020;
+}
+
+.Title {
+  color: white;
+  font-weight: 700;
+  font-size: 80px;
+}
+
+body {
+  background-color: var(--bg-color);
+  font-family: "Poppins", sans-serif;
+  color: white;
+  text-align: center;
+  font-size: 30px;
+  color: white;
+}
+
+.glow {
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
+  text-align: center;
+  padding-top: 100px;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+}
+
+@keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff;
+  }
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #fff;
+  }
+}
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff;
+  }
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #fff;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+section {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  min-height: 100vh;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+section h2 {
+  margin-bottom: 20px;
+}
+
+section p {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+#section1 {
+  margin-top: 80vh;
+}
+
+section:nth-child(1) {
+  color: white !important;
+}
+
+section:nth-child(2) {
+  color: white !important;
+}
+
+section:nth-child(3) {
+  color: white !important;
+}
+
+.scrollify-section {
+  height: 100vh; /* oder eine andere Höhe, die du benötigst */
+  margin-bottom: 200px; /* oder einen anderen Abstand, den du benötigst */
+}
+
+ul {
+  overflow: hidden;
+  background-color: #202020;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  left: 0;
+  vertical-align: middle;
+  list-style-type: none;
+  margin: 0 !important;
+  height: 60px;
+  max-height: 60px;
+  padding: 0 !important;
+  box-sizing: unset;
+}
+
+li {
+  float: left;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+li a {
+  color: white;
+  text-align: center;
+  padding: 1px 16px;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.active {
+  display: flex;
+}
+
+@media (min-width: 1126px) {
+  #menubreit {
+    display: block;
+  }
+
+  #menuklein {
+    display: none;
+  }
+}
+
+@media (max-width: 1126px) {
+  #menubreit {
+    display: none;
+  }
+
+  #menuklein {
+    display: block;
+  }
+}
+
+#menuklein {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  left: 0;
+  height: 60px;
+  vertical-align: middle;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: #202020;
+}
+
+#menuklein ul {
+  margin-top: 60px !important;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  padding: 0;
+}
+
+#menubutton {
+  background-color: transparent;
+  border: none;
+  float: right;
+}
+
+#menubutton img {
+  height: 60px;
+}
+
+#paddingwith {
+  color: white !important;
+}
